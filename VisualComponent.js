@@ -4,10 +4,6 @@ class VisualComponent {
         this.wrapper = document.createElement('div');
         this.wrapper.style.display = 'none';
         this.wrapper.style.position = 'relative';
-        this.hola = document.createElement('h2');
-        this.hola.innerHTML = 'Buenas';
-        this.wrapper.appendChild(this.hola);
-        document.body.appendChild(this.wrapper);
     }
 
     draw() {
@@ -26,6 +22,19 @@ class VisualComponent {
 
     get position() {
         return `left: ${this.wrapper.style.left} top: ${this.wrapper.style.top}`;
+    }
+
+    setDimension(width, height) {
+        this.wrapper.style.width = `${width}px`;
+        this.wrapper.style.height = `${height}px`;
+    }
+
+    get dimension() {
+        return `width: ${this.wrapper.style.width} height: ${this.wrapper.style.height}`;
+    }
+
+    appendBody() {
+        document.body.appendChild(this.wrapper);
     }
 
 }

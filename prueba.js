@@ -1,6 +1,10 @@
-import VisualComponent from "./VisualComponent.js";
+import Button from "./button/button.js";
 
-var component = new VisualComponent();
+var button = new Button();
 
-component.draw();
-component.setPosition(100, 100);
+button.draw();
+button.setPosition(150, 100);
+console.log(button.position);
+button.setDimension(200, 100);
+console.log(button.dimension);
+button.appendBody();
