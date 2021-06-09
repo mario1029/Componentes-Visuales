@@ -13,7 +13,7 @@ button.setText("boton de prueba");
 button.setMouseOver(()=>{
     console.log("hola");
 })
-button.setDisabled("true");
+button.setDisabled(false);
 button.appendBody();
 
 button2.draw();
@@ -22,7 +22,7 @@ console.log(button.position);
 button2.setDimension(200, 100);
 console.log(button.dimension);
 button2.setText("boton de prueba");
-//button2.setDisabled("true");
+//button2.setDisabled(true);
 button2.appendBody();
 
 button3.draw();
@@ -31,5 +31,5 @@ console.log(button.position);
 button3.setDimension(200, 100);
 console.log(button.dimension);
 button3.setText("boton de prueba");
-button2.setDisabled("true");
+//button3.setDisabled(true);
 button3.appendBody();

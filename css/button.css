@@ -1,3 +1,4 @@
+/*variables*/
 :root{
     --button-color-1: rgb(10, 55, 92);
     --button-color-2:white;
@@ -5,11 +6,10 @@
     --font-color-2:blue;
 }
 
-/*Para que no afecte a los botones que no sean del componente*/
-button.ButtonBig,button.ButtonBasic,button.ButtonMargen{
-    /*para tomar los valores del div, pero no me gusta como queda
-    width: inherit;
-    height: inherit; */
+.ButtonBig,.ButtonBasic,.ButtonMargen{
+    /*para tomar los valores del div, pero no me gusta como queda*/
+    /* width: inherit; o width: 100%;
+    height: inherit; o height:100%; */
     border-radius: 4px;
     text-transform: capitalize;
     transition: 1.25s;
@@ -67,9 +67,8 @@ button.ButtonBig,button.ButtonBasic,button.ButtonMargen{
 }
  
 /*Disabled*/
-button:disabled{
+.ButtonBig:disabled,.ButtonBasic:disabled,.ButtonMargen:disabled{
     pointer-events: none;
-    cursor: not-allowed;
     color:whitesmoke;
     background-color: rgb(212, 212, 212);
     box-shadow: none;
