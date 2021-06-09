@@ -1,0 +1,76 @@
+:root{
+    --button-color-1: rgb(10, 55, 92);
+    --button-color-2:white;
+    --font-color-1:aliceblue;
+    --font-color-2:blue;
+}
+
+/*Para que no afecte a los botones que no sean del componente*/
+button.ButtonBig,button.ButtonBasic,button.ButtonMargen{
+    /*para tomar los valores del div, pero no me gusta como queda
+    width: inherit;
+    height: inherit; */
+    border-radius: 4px;
+    text-transform: capitalize;
+    transition: 1.25s;
+}
+
+/*ButtonBasic*/
+
+.ButtonBasic{
+    background: var(--button-color-1);
+    border:0px solid;
+    color: var(--font-color-1);/*hacer que esto cambie en el js, para tener diversos estilos*/
+}
+
+.ButtonBasic:hover{
+    opacity: 0.85;
+}
+
+.ButtonBasic:active{
+    opacity: 0.4;
+}
+
+/*ButtonMargen*/
+
+.ButtonMargen{
+    background: var(--button-color-2);
+    border: 1px solid;
+    color: var(--font-color-2);/*hacer que esto cambie en el js, para tener diversos estilos*/
+}
+
+.ButtonMargen:hover{
+    color: var(--button-color-2);
+    background: var(--font-color-2);
+}
+
+.ButtonMargen:active{
+    opacity: 0.65;
+}
+
+/*ButtonBig*/
+
+.ButtonBig{
+    background: var(--button-color-1);
+    border:0px solid;
+    color: var(--font-color-1);/*hacer que esto cambie en el js, para tener diversos estilos*/
+    box-shadow: 1px 1px 3px 2px black;
+}
+
+.ButtonBig:hover{
+    transform: scale(1.2);
+}
+
+.ButtonBig:active{
+    opacity: 0.65;
+    box-shadow: none;
+}
+ 
+/*Disabled*/
+button:disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+    color:whitesmoke;
+    background-color: rgb(212, 212, 212);
+    box-shadow: none;
+}
