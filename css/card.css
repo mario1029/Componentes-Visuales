@@ -1,0 +1,12 @@
+:root{
+  --float-value: left;
+}
+
+.card{
+  border-style: solid;
+  border-width: 1px;
+}
+
+.float-img{
+  float: var(--float-value);
+}

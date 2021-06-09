@@ -4,6 +4,7 @@ class VisualComponent {
         this.wrapper = document.createElement('div');
         this.wrapper.style.display = 'none';
         this.wrapper.style.position = 'relative';
+        document.body.appendChild(this.wrapper);
     }
 
     draw() {
@@ -31,10 +32,6 @@ class VisualComponent {
 
     get dimension() {
         return `width: ${this.wrapper.style.width} height: ${this.wrapper.style.height}`;
-    }
-
-    appendBody() {
-        document.body.appendChild(this.wrapper);
     }
 
 }
