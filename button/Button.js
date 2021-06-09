@@ -22,7 +22,7 @@ class Button extends VisualComponent {
     }
 
     setDisabled(valor){
-        this.button.setAttribute("disabled",valor)
+        this.button.disabled=valor
     }
 
 }
