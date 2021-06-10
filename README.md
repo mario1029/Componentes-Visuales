@@ -41,6 +41,6 @@ Su constructor permite recibir un String con el tipo de boton que se desea utili
 
 ### Métodos
 
-- `attributeChangedCallback`:
+- `attributeChangedCallback`: Cambia el estado de la lista entre seleccionado y no seleccionado
 - `addElement`: Permite agregar una lista (en formato `json`) al treeview, con la cual se forma la estructura del mismo
-- `setViewState`:
+- `setViewState`: Permite hacer los elementos de la lista visibles o desaparecerlos.
