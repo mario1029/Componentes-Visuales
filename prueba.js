@@ -2,6 +2,10 @@ import Button from "./button/button.js";
 import Card from "./card/Card.js";
 import Treeview from "./treeview/Treeview.js";
 
+var botones= document.getElementById("botones");
+var carta= document.getElementById("card");
+var treeview=document.getElementById('treeview');
+
 var button = new Button('ButtonMargen');
 var button2 = new Button('ButtonBig');
 var button3 = new Button();
@@ -34,6 +38,10 @@ button3.setText("boton de prueba");
 //button3.setDisabled(true);
 // Card
 
+botones.appendChild(button.wrapper);
+botones.appendChild(button2.wrapper);
+botones.appendChild(button3.wrapper);
+
 var card = new Card();
 card.draw();
 card.setSubtitle('DEE');
@@ -43,6 +51,8 @@ card.setImg('./resources/xd.png');
 card.setImgAlt('No tenia más fotos en mi PC y se me fue el inter');
 card.setFooter("Footer chiquito");
 card.setImgFloat('left');
+
+carta.appendChild(card.wrapper);
 
 //Tree view
 var tree = new Treeview();
@@ -74,3 +84,5 @@ var data = {
         }]};
 
 tree.addElement(data.Hijos, tree);
+
+treeview.appendChild(tree.wrapper);
