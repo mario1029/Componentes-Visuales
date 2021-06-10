@@ -1,5 +1,6 @@
 import Button from "./button/button.js";
 import Card from "./card/Card.js";
+import Treeview from "./treeview/Treeview.js";
 
 var button = new Button('ButtonMargen');
 var button2 = new Button('ButtonBig');
@@ -42,3 +43,34 @@ card.setImg('./resources/xd.png');
 card.setImgAlt('No tenia más fotos en mi PC y se me fue el inter');
 card.setFooter("Footer chiquito");
 card.setImgFloat('left');
+
+//Tree view
+var tree = new Treeview();
+tree.draw();
+
+var data = {
+    "Hijos":[
+        {"Nombre":"Carpeta1",
+         "Hijos":[
+            {
+                "Nombre":"arhivo.png",
+                "Hijos":[]
+            },
+            {
+                "Nombre":"proyecto.pdf",
+                "Hijos":[]
+            }
+         ]
+        },
+        {"Nombre":"Capeta2",
+         "Hijos":[{
+                "Nombre":"ayuda.txt",
+                "Hijos":[]
+            },
+            {
+                "Nombre":"otra_cosa.ppt",
+                "Hijos":[]
+            }]
+        }]};
+
+tree.addElement(data.Hijos, tree);
