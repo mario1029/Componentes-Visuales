@@ -7,9 +7,8 @@
 }
 
 .ButtonBig,.ButtonBasic,.ButtonMargen{
-    /*para tomar los valores del div, pero no me gusta como queda*/
-    /* width: inherit; o width: 100%;
-    height: inherit; o height:100%; */
+    width: inherit; 
+    height: inherit;
     border-radius: 4px;
     text-transform: capitalize;
     transition: 1.25s;
@@ -20,7 +19,7 @@
 .ButtonBasic{
     background: var(--button-color-1);
     border:0px solid;
-    color: var(--font-color-1);/*hacer que esto cambie en el js, para tener diversos estilos*/
+    color: var(--font-color-1);
 }
 
 .ButtonBasic:hover{
@@ -36,7 +35,7 @@
 .ButtonMargen{
     background: var(--button-color-2);
     border: 1px solid;
-    color: var(--font-color-2);/*hacer que esto cambie en el js, para tener diversos estilos*/
+    color: var(--font-color-2);
 }
 
 .ButtonMargen:hover{
@@ -53,7 +52,7 @@
 .ButtonBig{
     background: var(--button-color-1);
     border:0px solid;
-    color: var(--font-color-1);/*hacer que esto cambie en el js, para tener diversos estilos*/
+    color: var(--font-color-1);
     box-shadow: 1px 1px 3px 2px black;
 }
 
