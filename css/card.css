@@ -3,10 +3,44 @@
 }
 
 .card{
-  border-style: solid;
-  border-width: 1px;
+  margin: auto;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: rgb(200, 211, 255);
+  width: 85%;
+}
+
+.card h2, p, h3 {
+  margin-top: 1%;
+  width: 95%;
+}
+
+.card h2, p {
+  padding: 1%;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid rgb(42, 88, 255);
+}
+
+.card h2, p {
+  background-color: rgb(162, 182, 255);
+  border-radius: 10px;
+}
+
+.card h2, h3, p {
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .float-img{
+  position: relative;
+  top: -8px;
   float: var(--float-value);
+  margin-right: 2%;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: rgb(162, 182, 255);
+  
 }
+
