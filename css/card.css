@@ -7,7 +7,7 @@
   padding: 2%;
   border-radius: 10px;
   background-color: rgb(200, 211, 255);
-  width: 85%;
+  width: 60%;
 }
 
 .card h2, p, h3 {
@@ -41,6 +41,7 @@
   padding: 1%;
   border-radius: 10px;
   background-color: rgb(162, 182, 255);
+  width: 38%;
   
 }
 
