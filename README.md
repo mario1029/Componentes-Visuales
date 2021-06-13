@@ -1,3 +1,13 @@
+*PROYECTO DE PROGRAMACION BASADA EN COMPONENTES*
+
+Integrantes:
+
+Gonzalez, Mario C.I: 27.969.414
+Jimenez, Jose C.I: 30.355.153
+Torres, Gerardo C.I: 29.869.119
+Zambrano, Nathalie C.I: 28.400.266
+
+
 # Componentes-Visuales
 Treeview, Card, Button
 
