@@ -1,9 +1,13 @@
 import VisualComponent from "../VisualComponent.js";
+import {controller} from '../controlador/controlador.js';
+
 
 class Treeview extends VisualComponent {
 
-    constructor() {
+    constructor({id}) {
         super();
+        this.id=id;
+
         this.list = document.createElement("ul");
         this.wrapper.appendChild(this.list);
 
@@ -12,9 +16,15 @@ class Treeview extends VisualComponent {
         this.raiz;
         this.select;
         this.noselect;
+
+        controller.register(this);
     }
 
-   static get observedAttributes(){
+    setCSS(){
+        this.wrapper.className='Button_env_'+this.env;
+    }
+
+    static get observedAttributes(){
         return ['select','noselect'];
     }
 

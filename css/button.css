@@ -6,7 +6,7 @@
     --font-color-2:blue;
 }
 
-.ButtonBig,.ButtonBasic,.ButtonMargen{
+.Button_env_2,.Button_env_0,.Button_env_1{
     width: inherit; 
     height: inherit;
     border-radius: 4px;
@@ -16,57 +16,57 @@
 
 /*ButtonBasic*/
 
-.ButtonBasic{
+.Button_env_0{
     background: var(--button-color-1);
     border:0px solid;
     color: var(--font-color-1);
 }
 
-.ButtonBasic:hover{
+.Button_env_0:hover{
     opacity: 0.85;
 }
 
-.ButtonBasic:active{
+.Button_env_0:active{
     opacity: 0.4;
 }
 
 /*ButtonMargen*/
 
-.ButtonMargen{
+.Button_env_1{
     background: var(--button-color-2);
     border: 1px solid;
     color: var(--font-color-2);
 }
 
-.ButtonMargen:hover{
+.Button_env_1:hover{
     color: var(--button-color-2);
     background: var(--font-color-2);
 }
 
-.ButtonMargen:active{
+.Button_env_1:active{
     opacity: 0.65;
 }
 
 /*ButtonBig*/
 
-.ButtonBig{
+.Button_env_2{
     background: var(--button-color-1);
     border:0px solid;
     color: var(--font-color-1);
     box-shadow: 1px 1px 3px 2px black;
 }
 
-.ButtonBig:hover{
+.Button_env_2:hover{
     transform: scale(1.2);
 }
 
-.ButtonBig:active{
+.Button_env_2:active{
     opacity: 0.65;
     box-shadow: none;
 }
  
 /*Disabled*/
-.ButtonBig:disabled,.ButtonBasic:disabled,.ButtonMargen:disabled{
+.Button_env_2:disabled,.ButtonBasic:disabled,.ButtonMargen:disabled{
     pointer-events: none;
     color:whitesmoke;
     background-color: rgb(212, 212, 212);

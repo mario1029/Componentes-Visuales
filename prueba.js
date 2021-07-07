@@ -1,14 +1,15 @@
-import Button from "./button/button.js";
-import Card from "./card/Card.js";
-import Treeview from "./treeview/Treeview.js";
+import {controller} from './controlador/controlador.js';
 
 var botones= document.getElementById("botones");
 var carta= document.getElementById("card");
 var treeview=document.getElementById('treeview');
 
-var button = new Button('ButtonMargen');
-var button2 = new Button('ButtonBig');
-var button3 = new Button();
+var button = new frameWork.Button({id:'ButtonMargen'});
+var button2 = new frameWork.Button({id:'boton'});
+var button3 = new frameWork.Button({id:'mybutton'});
+
+controller.setCSS(button3,1)
+controller.setCSS(button,2)
 
 button.draw();
 button.setPosition(0, 0);
@@ -36,13 +37,13 @@ button3.setDimension(140, 20);
 console.log(button.dimension);
 button3.setText("boton de prueba");
 //button3.setDisabled(true);
-// Card
 
 botones.appendChild(button.wrapper);
 botones.appendChild(button2.wrapper);
 botones.appendChild(button3.wrapper);
 
-var card = new Card();
+// Card
+var card = new frameWork.Card({id:'myCard'});
 card.draw();
 card.setSubtitle('DEE');
 card.setTitle('DAA');
@@ -55,7 +56,7 @@ card.setImgFloat('left');
 carta.appendChild(card.wrapper);
 
 //Tree view
-var tree = new Treeview();
+var tree = new frameWork.Treeview({id:'myTreeview'});
 tree.draw();
 
 var data = {
@@ -86,3 +87,5 @@ var data = {
 tree.addElement(data.Hijos, tree);
 
 treeview.appendChild(tree.wrapper);
+
+console.log(controller.registro)

@@ -1,9 +1,12 @@
 import VisualComponent from "../VisualComponent.js";
+import {controller} from '../controlador/controlador.js';
 
 class Card extends VisualComponent {
 
-    constructor() {
+    constructor({id}) {
         super();
+        this.id=id;
+        
         this.wrapper.className = "card";
 
         this.img = document.createElement('img');
@@ -21,6 +24,12 @@ class Card extends VisualComponent {
 
         this.footer = document.createElement('p');
         this.wrapper.appendChild(this.footer);
+        
+        controller.register(this);
+    }
+
+    setCSS(){
+        this.wrapper.className='card_env_'+this.env;
     }
 
     setTitle(title) {
