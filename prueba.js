@@ -44,18 +44,42 @@ botones.appendChild(button.wrapper);
 botones.appendChild(button2.wrapper);
 botones.appendChild(button3.wrapper);
 
-// Card
-var card = new frameWork.Card({ id: 'myCard' });
-card.draw();
-card.setSubtitle('DEE');
-card.setTitle('DAA');
-card.setContent('DIII');
-card.setImg('./resources/xd.png');
-card.setImgAlt('No tenia más fotos en mi PC y se me fue el inter');
-card.setFooter('Footer chiquito');
-card.setImgFloat('left');
+// CARD
+var card0 = new frameWork.Card({ id: 'myCard0' });
+var card1 = new frameWork.Card({ id: 'myCard1' });
+var card2 = new frameWork.Card({ id: 'myCard2' });
+var card3 = new frameWork.Card({ id: 'myCard3' });
 
-carta.appendChild(card.wrapper);
+controller.setCSS(card0, 0)
+controller.setCSS(card1, 1);
+controller.setCSS(card2, 2);
+controller.setCSS(card3, 3);
+
+// Card0
+card0.draw();
+card0.setSubtitle('DEE');
+card0.setTitle('DAA');
+card0.setContent('DIII');
+card0.setImg('./resources/xd.png');
+card0.setImgAlt('No tenia más fotos en mi PC y se me fue el inter');
+card0.setFooter('Footer chiquito');
+card0.setImgFloat('left');
+
+
+// Card1
+card1.draw();
+card1.setSubtitle('DEE');
+card1.setTitle('DAA');
+card1.setContent('DIII');
+card1.setImg('./resources/xd.png');
+card1.setImgAlt('No tenia más fotos en mi PC y se me fue el inter');
+card1.setFooter('Footer chiquito');
+card1.setImgFloat('left');
+
+
+carta.appendChild(card0.wrapper);
+carta.appendChild(card1.wrapper);
+
 
 // Tree view
 var tree = new frameWork.Treeview({ id: 'myTreeview' });

@@ -2,35 +2,12 @@
   --float-value: left;
 }
 
-.card{
+.card_env_0, .card_env_1, .card_env_2, .card_env_3{
   margin: auto;
   padding: 2%;
   border-radius: 10px;
-  background-color: rgb(200, 211, 255);
   width: 60%;
-}
-
-.card h2, p, h3 {
-  margin-top: 1%;
-  width: 95%;
-}
-
-.card h2, p {
-  padding: 1%;
-}
-
-.card h2 {
-  font-size: 1.5em;
-  border-bottom: 2px solid rgb(42, 88, 255);
-}
-
-.card h2, p {
-  background-color: rgb(162, 182, 255);
-  border-radius: 10px;
-}
-
-.card h2, h3, p {
-  font-family: Arial, Helvetica, sans-serif
+  margin-bottom: 2%;
 }
 
 .float-img{
@@ -40,7 +17,67 @@
   margin-right: 2%;
   padding: 1%;
   border-radius: 10px;
-  background-color: rgb(162, 182, 255);
   width: 38%;
 }
 
+
+/*ESTILO 0*/
+
+.card_env_0 {
+  background-color: rgb(200, 211, 255);
+}
+
+.card_env_0 h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid rgb(42, 88, 255);
+}
+
+.card_env_0 h2, .card_env_0 p, .card_env_0 h3{
+  margin-top: 1%;
+  width: 95%;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.card_env_0 h2, .card_env_0 p {
+  padding: 1%;
+  background-color: rgb(162, 182, 255);
+  border-radius: 10px;
+}
+
+.card_env_0 .float-img {
+  background-color: rgb(162, 182, 255);
+}
+
+
+/*ESTILO 1*/
+
+.card_env_1 {
+  background-color: rgb(60, 47, 82);
+  border: 2.5px solid rgb(255, 0, 123);
+}
+
+.card_env_1 h2 {
+  font-size: 1.5em;
+  border-bottom: 2.5px solid rgb(255, 0, 123);
+}
+
+.card_env_1 h2, .card_env_1 p, .card_env_1 h3{
+  margin-top: 1%;
+  width: 95%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  color: rgb(193, 180, 216);
+}
+
+.card_env_1 h3, .card_env_1 p {
+  border-bottom: 2.5px solid rgb(255, 0, 123);
+}
+
+.card_env_1 h2, .card_env_1 p {
+  padding: 1%;
+  background-color: rgb(81, 69, 99);
+}
+
+.card_env_1 .float-img {
+  background-color: rgb(81, 69, 99);
+}
