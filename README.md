@@ -63,3 +63,12 @@ Componente encargado del registro y control de las instancias de los *componente
 - `register(instance)`: proceso de guardado de las instancias de los componentes visuales
 
 - `setCSS(instance, env)`: metodo utilizado para cambiar el aspecto de un componente
+
+# Componente-Comunicación
+
+### Métodos
+
+- `post(url, text)`: envía un POST request
+- `get(url)`: envía un GET request
+- `put(url, text)`: envía un PUT request
+- `delete(url)`: envía un DELETE request

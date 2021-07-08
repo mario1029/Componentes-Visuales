@@ -1,12 +1,12 @@
 class Comms {
 
-  async post(url, json) {
+  async post(url, text) {
     const options = {
       method: "POST",
       headers: {
         'Content-type': 'text/plain'
       },
-      body: json,
+      body: text,
     };
     const response = await fetch(url, options);
     const data = await response.json();
@@ -18,13 +18,13 @@ class Comms {
     return await response.json();
   }
 
-  async put(url, json) {
+  async put(url, text) {
     const options = {
       method: "PUT",
       headers: {
         'Content-type': 'text/plain'
       },
-      body: json,
+      body: text,
     };
     const response = await fetch(url, options);
     const data = await response.json();
