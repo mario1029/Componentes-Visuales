@@ -2,7 +2,7 @@
   --float-value: left;
 }
 
-.card_env_0, .card_env_1, .card_env_2, .card_env_3{
+.card_env_0, .card_env_1{
   margin: auto;
   padding: 2%;
   border-radius: 10px;

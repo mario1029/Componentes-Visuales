@@ -29,6 +29,10 @@ class Card extends VisualComponent {
     }
 
     setCSS(){
+        if(this.env<0 || this.env>1){
+            console.log(`No existe ambiente para el elemento ${this.id} con el ENV en ${this.env}`)
+            this.env=0;
+          }
         this.wrapper.className='card_env_'+this.env;
     }
 

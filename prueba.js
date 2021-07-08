@@ -47,13 +47,9 @@ botones.appendChild(button3.wrapper);
 // CARD
 var card0 = new frameWork.Card({ id: 'myCard0' });
 var card1 = new frameWork.Card({ id: 'myCard1' });
-var card2 = new frameWork.Card({ id: 'myCard2' });
-var card3 = new frameWork.Card({ id: 'myCard3' });
 
 controller.setCSS(card0, 0)
 controller.setCSS(card1, 1);
-controller.setCSS(card2, 2);
-controller.setCSS(card3, 3);
 
 // Card0
 card0.draw();
