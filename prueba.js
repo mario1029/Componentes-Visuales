@@ -1,9 +1,11 @@
 import { controller } from './controlador/controlador.js';
+import Comms from './components/comms/Comms.js'
 
 var botones = document.getElementById('botones');
 var carta = document.getElementById('card');
 var treeview = document.getElementById('treeview');
 
+// Botones
 var button = new frameWork.Button({ id: 'ButtonMargen' });
 var button2 = new frameWork.Button({ id: 'boton' });
 var button3 = new frameWork.Button({ id: 'mybutton' });
@@ -55,7 +57,7 @@ card.setImgFloat('left');
 
 carta.appendChild(card.wrapper);
 
-//Tree view
+// Tree view
 var tree = new frameWork.Treeview({ id: 'myTreeview' });
 tree.draw();
 
@@ -95,5 +97,12 @@ var data = {
 tree.addElement(data.Hijos, tree);
 
 treeview.appendChild(tree.wrapper);
-
 console.log(controller.registro);
+
+
+// Comms
+const comms = new Comms();
+comms.post("http://localhost:5000/", "Hola").then((data) => console.log(data));
+// comms.get("http://localhost:5000/").then((data) => console.log(data));
+// comms.put("http://localhost:5000/", "Hola").then((data) => console.log(data));
+// comms.delete("http://localhost:5000/").then((data) => console.log(data));

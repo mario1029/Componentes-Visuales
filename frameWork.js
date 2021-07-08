@@ -1,11 +1,9 @@
-import Button from './button/Button.js';
-import card from './card/Card.js';
-import Treeview from './treeview/Treeview.js';
-//import del de comunicacion
+import Button from './components/button/Button.js';
+import card from './components/card/Card.js';
+import Treeview from './components/treeview/Treeview.js';
 
-window.frameWork={
-    'Card':card,
-    'Button':Button,
-    'Treeview':Treeview
-    //comunicacion:comm
+window.frameWork = {
+    'Card': card,
+    'Button': Button,
+    'Treeview': Treeview,
 }

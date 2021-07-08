@@ -1,5 +1,5 @@
 import VisualComponent from '../VisualComponent.js';
-import { controller } from '../controlador/controlador.js';
+import { controller } from '../../controlador/controlador.js';
 
 class Treeview extends VisualComponent {
   constructor({ id }) {
