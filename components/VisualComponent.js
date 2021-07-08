@@ -5,6 +5,11 @@ class VisualComponent {
         this.wrapper.style.display = 'none';
         this.wrapper.style.position = 'relative';
         document.body.appendChild(this.wrapper);
+        this.env=0;
+    }
+
+    setEnvioroment(env){
+        this.env=env;
     }
 
     draw() {

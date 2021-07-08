@@ -1,12 +1,19 @@
 import VisualComponent from "../VisualComponent.js";
+import {controller} from '../../controlador/controlador.js';
 
 class Button extends VisualComponent {
 
-    constructor(tipo){
+    constructor({id}){
         super();
+        this.id=id;
         this.button = document.createElement('button');
         this.wrapper.appendChild(this.button);
-        this.button.className =verificar(tipo)? tipo:'ButtonBasic';// Basic estara por defecto
+        this.button.className ='Button_env_0';// Basic estara por defecto
+        controller.register(this);
+    }
+
+    setCSS(){
+        this.button.className='Button_env_'+this.env;
     }
 
     setText(texto){
@@ -25,12 +32,6 @@ class Button extends VisualComponent {
         this.button.disabled=valor
     }
 
-}
-
-//verificar si es uno de los tipos exitentes
-function verificar(params) {
-    if(params==="ButtonBig"||params==="ButtonBasic"||params==="ButtonMargen")
-        return true;
 }
 
 export default Button;
