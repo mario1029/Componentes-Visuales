@@ -4,9 +4,9 @@ class Comms {
     const options = {
       method: "POST",
       headers: {
-        'Content-type': 'text/plain'
+        'Content-type': 'application/json',
       },
-      body: text,
+      body: JSON.stringify(text),
     };
     const response = await fetch(url, options);
     const data = await response.json();

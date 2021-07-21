@@ -49,7 +49,7 @@ var card0 = new frameWork.Card({ id: 'myCard0' });
 var card1 = new frameWork.Card({ id: 'myCard1' });
 
 controller.setCSS(card0, 0)
-controller.setCSS(card1, 1);
+controller.setCSS(card1, 7);
 
 // Card0
 card0.draw();
@@ -122,7 +122,21 @@ console.log(controller.registro);
 
 // Comms
 const comms = new Comms();
-comms.post("http://localhost:5000/", "Hola").then((data) => console.log(data));
-// comms.get("http://localhost:5000/").then((data) => console.log(data));
-// comms.put("http://localhost:5000/", "Hola").then((data) => console.log(data));
-// comms.delete("http://localhost:5000/").then((data) => console.log(data));
+
+
+
+
+ //solicitud al servidor
+
+ comms.post('http://localhost:5000/',{
+   //parametros
+   objectname:'objetoNegocios',
+   method:'msg',
+   paramas:{
+     pan:'andino',
+     p:600
+   },
+   action:'execute'
+ }).then((data)=>{
+   console.log(data)
+ })
