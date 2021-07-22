@@ -49,7 +49,7 @@ var card0 = new frameWork.Card({ id: 'myCard0' });
 var card1 = new frameWork.Card({ id: 'myCard1' });
 
 controller.setCSS(card0, 0)
-controller.setCSS(card1, 7);
+controller.setCSS(card1, 1);
 
 // Card0
 card0.draw();
@@ -123,20 +123,16 @@ console.log(controller.registro);
 // Comms
 const comms = new Comms();
 
-
-
-
  //solicitud al servidor
-
- comms.post('http://localhost:5000/',{
-   //parametros
-   objectname:'objetoNegocios',
-   method:'msg',
-   paramas:{
-     pan:'andino',
-     p:600
-   },
-   action:'execute'
- }).then((data)=>{
-   console.log(data)
- })
+button.setOnclikEvent(async ()=>{
+  const response= await comms.post('http://localhost:5000/',{
+    //parametros
+    objectname:'objetoNegocios',
+    method:'msg',
+    paramas:'Prueba de envio',
+    action:'execute'
+  })
+  card0.setTitle(response.message)
+  card0.setContent(response.data)
+  alert('Se ha realizado una solicitud al servidor, en el titulo y el contenido del la Card vera la respuesta')
+})
