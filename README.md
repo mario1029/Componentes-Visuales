@@ -72,3 +72,13 @@ Componente encargado del registro y control de las instancias de los *componente
 - `get(url)`: envía un GET request
 - `put(url, text)`: envía un PUT request
 - `delete(url)`: envía un DELETE request
+
+# Proceso de Comunicacion
+
+El proceso de comunicacion sigue la siguiente lista de pasos:
+
+- `envio de solicitud mediante el componente de comunicacion`
+- `recepcion de la solicitud en el servidor`: el servidor puede ser creado manualmente por el desarrollador, pero a su vez le dajamos la posibilidad de usar nuestro *componente server*, el cual genera un servidor automaticamente.
+- `Ejecucion dinamica del metodo de la clase especiicada en el body de la solicitud`: esta ejecucion se realiza mediante el proceso reflexivo, el cual tenemos encapsulado en el archivo *reflex.js*
+- `envio de la respuesta del servidor`
+- `recepcion de la respuesta en el cliente`: la respuesta recibida puede ser utilizada como desee el desarrollador, en nuestro ejemplo mostramos la respuesta a traves de uno de nuestros componentes visuales 

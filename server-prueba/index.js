@@ -1,5 +1,5 @@
 // const server = new (require("./frameworkBack/components/server"))();
-
+// server.setCarpetaBO('/BO/')
 // server.arrancar();
 
 const express = require('express');
